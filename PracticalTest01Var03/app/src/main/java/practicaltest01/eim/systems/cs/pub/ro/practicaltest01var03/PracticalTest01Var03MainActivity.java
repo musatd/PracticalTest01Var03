@@ -83,7 +83,7 @@ public class PracticalTest01Var03MainActivity extends AppCompatActivity {
     private class MessageBroadcastReceiver extends BroadcastReceiver {
         @Override
         public void onReceive(Context context, Intent intent) {
-            Log.d("[Message]", intent.getStringExtra("message"));
+            Log.d("[Message]", intent.getStringExtra("student") + intent.getStringExtra("group"));
         }
     }
 
